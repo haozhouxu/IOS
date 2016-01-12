@@ -21,7 +21,7 @@ namespace LoginBestPractice.iOS
         {
             //Validate our Username & Password.
             //This is usually a web service call.
-            sender.SetTitle("正在登录...",UIControlState.Normal);
+            //sender.SetTitle("正在登录...",UIControlState.Normal);
             if(IsUserNameValid() && IsPasswordValid())
             {
                 name = UserNameTextView.Text.Trim();
@@ -34,13 +34,13 @@ namespace LoginBestPractice.iOS
                 }
                 else
                 {
-                    sender.SetTitle("登录", UIControlState.Normal);
+                    //sender.SetTitle("登录", UIControlState.Normal);
                     new UIAlertView("登陆失败", "帐号或密码不正确", null, "确认", null).Show();
                 }
             }
             else
             {
-                sender.SetTitle("登录", UIControlState.Normal);
+                //sender.SetTitle("登录", UIControlState.Normal);
                 new UIAlertView("登陆失败", "帐号和密码都不能为空", null, "确认", null).Show();
             }
         }
