@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="http://icantest.genesysinfo.net/eaea/EAEAService.asmx?wsdl" docRef="http://icantest.genesysinfo.net/eaea/EAEAService.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="http://icantest.genesysinfo.net/eaea/EAEAService.asmx" xmlns:q1="genesysinfo.net" binding="q1:EAEAServiceSoap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="http://icantest.genesysinfo.net/eaea/EAEAService.asmx" xmlns:q2="genesysinfo.net" binding="q2:EAEAServiceSoap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>
