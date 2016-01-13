@@ -16,10 +16,6 @@ namespace Table
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
-            table = new UITableView(View.Bounds); // defaults to Plain style
-            string[] tableItems = new string[] { "Vegetables", "Fruits", "Flower Buds", "Legumes", "Bulbs", "Tubers" };
-            this.Source = new TableSource(tableItems);
-            Add(table);
         }
     }
 }

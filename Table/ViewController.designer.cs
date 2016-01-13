@@ -18,11 +18,19 @@ namespace Table
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIButton btn1 { get; set; }
 
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITableView table1 { get; set; }
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (btn1 != null) {
 				btn1.Dispose ();
 				btn1 = null;
+			}
+			if (table1 != null) {
+				table1.Dispose ();
+				table1 = null;
 			}
 		}
 	}
