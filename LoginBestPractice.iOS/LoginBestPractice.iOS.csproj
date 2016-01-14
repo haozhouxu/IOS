@@ -159,6 +159,7 @@
     <Compile Include="LoginPageViewController.designer.cs">
       <DependentUpon>LoginPageViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="TableSource.cs" />
     <Compile Include="TabPage2ViewController.cs" />
     <Compile Include="TabPage2ViewController.designer.cs">
       <DependentUpon>TabPage2ViewController.cs</DependentUpon>
@@ -166,6 +167,10 @@
     <Compile Include="SignUpViewController.cs" />
     <Compile Include="SignUpViewController.designer.cs">
       <DependentUpon>SignUpViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewController1.cs" />
+    <Compile Include="ViewController1.designer.cs">
+      <DependentUpon>ViewController1.cs</DependentUpon>
     </Compile>
     <Compile Include="Web References\EAEAService\Reference.cs">
       <AutoGen>True</AutoGen>
