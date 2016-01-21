@@ -22,6 +22,8 @@ namespace Table
                 TextColor = UIColor.FromRGB(127, 51, 0),
                 BackgroundColor = UIColor.Clear
             };
+            headingLabel.LineBreakMode = UILineBreakMode.WordWrap;
+            headingLabel.Lines = 0;
             subheadingLabel = new UILabel()
             {
                 Font = UIFont.FromName("AmericanTypewriter", 12f),
@@ -41,9 +43,9 @@ namespace Table
         public override void LayoutSubviews()
         {
             base.LayoutSubviews();
-            imageView.Frame = new CGRect(ContentView.Bounds.Width - 63, 5, 33, 33);
-            headingLabel.Frame = new CGRect(5, 4, ContentView.Bounds.Width - 63, 25);
-            subheadingLabel.Frame = new CGRect(100, 18, 100, 20);
+            //imageView.Frame = new CGRect(ContentView.Bounds.Width - 63, 5, 33, 33);
+            //headingLabel.Frame = new CGRect(5, 4, ContentView.Bounds.Width - 63, 80);
+            //subheadingLabel.Frame = new CGRect(100, 18, 100, 20);
         }
     }
 }

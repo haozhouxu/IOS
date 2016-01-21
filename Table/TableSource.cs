@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Foundation;
 using UIKit;
+using System.Drawing;
 
 namespace Table
 {
@@ -48,6 +49,9 @@ namespace Table
             cell.UpdateCell(tableItems[indexPath.Row]
                     , tableItems[indexPath.Row]
                     , UIImage.FromFile("4.png"));
+            cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+            cell.SetNeedsUpdateConstraints();
+            cell.UpdateConstraintsIfNeeded();
             return cell;
         }
 
@@ -80,5 +84,18 @@ namespace Table
             owner.PresentViewController(okAlertController, true, null);
             tableView.DeselectRow(indexPath, true);
         }
+
+        //public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
+        //{
+        //    // In here you could customize how you want to get the height for row. Then   
+        //    // just return it. 
+
+        //    //string value = tableItems[indexPath.Row];
+        //    //SizeF size = new SizeF((float)tableView.Bounds.Width - 40, (float)nfloat.MaxValue);
+
+        //    //float height = tableView.StringSize(value, UIFont.FromName("Helvetica", 17.0f), size, UILineBreakMode.WordWrap).Height + 10;
+        //    tableItems[indexPath.Row].get
+        //    return new nfloat(80);
+        //}
     }
 }

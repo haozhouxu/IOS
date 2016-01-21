@@ -37,8 +37,10 @@ namespace Table
             //var effect = UIBlurEffect.FromStyle(UIBlurEffectStyle.Light);
             //table1.SeparatorEffect = UIVibrancyEffect.FromBlurEffect(effect);
 
-            table1.SeparatorInset.InsetRect(new CGRect(4, 4, 150, 2));
-
+            //table1.SeparatorInset.InsetRect(new CGRect(4, 4, 150, 2));
+            table1.SeparatorStyle = UITableViewCellSeparatorStyle.None;
+            table1.RowHeight = UITableView.AutomaticDimension;
+            table1.EstimatedRowHeight = 80;
             table1.Source = new TableSource(tableItems, this);
         }
 
